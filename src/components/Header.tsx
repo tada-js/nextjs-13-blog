@@ -8,7 +8,7 @@ const Header = () => {
       </Link>
 
       <nav className="flex gap-4">
-        <Link href="/">Home</Link>
+        <Link href="/">홈</Link>
         <Link href="/posts">게시물</Link>
         <Link href="/about">소개</Link>
         <Link href="/contact">문의</Link>
