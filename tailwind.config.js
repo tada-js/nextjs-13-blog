@@ -16,6 +16,10 @@ module.exports = {
         '--main-color': '#C4DFDF',
         '--cream-color': '#F8F6F4',
       },
+      textColor: {
+        '--main-color': '#C4DFDF',
+        '--cream-color': '#F8F6F4',
+      },
     },
   },
   plugins: [],
