@@ -33,7 +33,7 @@ const AboutPage = () => {
           </p>
         </article>
 
-        <article className="my-4">
+        <article className="my-4 mr-10">
           <h2 className={TITLE_CLASS}>소개</h2>
           <div className="mx-auto w-24 border-b-4"></div>
           <h3 className={SUB_TITLE_CLASS}>
