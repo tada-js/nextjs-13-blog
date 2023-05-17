@@ -1,3 +1,4 @@
+import ContactForm from '@/components/ContactForm';
 import { Metadata } from 'next';
 import { AiFillGithub } from 'react-icons/ai';
 
@@ -32,6 +33,7 @@ const ContactPage = () => {
         <h2 className="my-8 text-2xl font-semibold -text--text-brand-3">
           이메일 보내기
         </h2>
+        <ContactForm />
       </section>
     </>
   );
