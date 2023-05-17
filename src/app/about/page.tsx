@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description: '프론트엔드 개발자 소개',
 };
 
-const TITLE_CLASS = 'my-2 text-2xl font-semibold text-[#fa9a82]';
-const SUB_TITLE_CLASS = 'm-4 text-[#e95e3b]';
+const TITLE_CLASS = 'my-2 text-2xl font-semibold -text--text-brand-3';
+const SUB_TITLE_CLASS = 'm-4 -text--text-brand-2';
 const STRONG_CLASS = 'font-semibold';
-const LINK_CLASS = 'hover:text-[#fa9a82]';
+const LINK_CLASS = 'hover:-text--text-brand-3';
 
 const AboutPage = () => {
   return (
