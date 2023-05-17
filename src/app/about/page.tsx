@@ -1,3 +1,4 @@
+import Profile from '@/components/Profile';
 import { Metadata } from 'next';
 import Link from 'next/link';
 
@@ -14,6 +15,7 @@ const LINK_CLASS = 'hover:text-[#fa9a82]';
 const AboutPage = () => {
   return (
     <>
+      <Profile />
       <section className="m-8 grid grid-cols-2 -bg--sub-color text-center shadow-lg">
         <article className="my-4 ">
           <h2 className={TITLE_CLASS}>프로필</h2>
