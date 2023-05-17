@@ -6,36 +6,52 @@ export const metadata: Metadata = {
   description: '프론트엔드 개발자 소개',
 };
 
+const TITLE_CLASS = 'my-2 text-2xl font-semibold text-[#d8946c]';
+const SUB_TITLE_CLASS = 'm-4 text-red-900';
+const STRONG_CLASS = 'font-semibold';
+const LINK_CLASS = 'hover:text-[#b69a8e]';
+
 const AboutPage = () => {
   return (
     <>
-      <section>
-        <article>
-          <h2>프로필</h2>
-          <p>
-            <strong>Blog: </strong>
-            <Link href="https://velog.io/@nu11">https://velog.io/@nu11</Link>
-            <br />
-            <strong>GitHub: </strong>
-            <Link href="https://github.com/tada-js">
+      <section className="m-8 grid grid-cols-2 -bg--cream-color text-center shadow-lg">
+        <article className="my-4 ">
+          <h2 className={TITLE_CLASS}>프로필</h2>
+          <p className="my-4">
+            <strong className={STRONG_CLASS}>Blog: </strong>
+            <Link href="https://velog.io/@nu11" className={LINK_CLASS}>
               https://velog.io/@nu11
+            </Link>
+            <br />
+            <strong className={STRONG_CLASS}>GitHub: </strong>
+            <Link href="https://github.com/tada-js" className={LINK_CLASS}>
+              https://github.com/tada-js
             </Link>
           </p>
         </article>
 
-        <article>
-          <h2>소개</h2>
-          <h3>ㅡ 새로운 걸 배우고 기록하고 경험하는 것을 좋아합니다.</h3>
+        <article className="my-4">
+          <h2 className={TITLE_CLASS}>소개</h2>
+          <h3 className={SUB_TITLE_CLASS}>
+            ㅡ 새로운 걸 배우고 기록하고 경험하는 것을 좋아합니다.
+          </h3>
           멋쟁이 사자처럼 프론트엔드 스쿨 2기를 참여하며 그날 학습한 내용을
-          <Link href="https://github.com/tada-js/codelion-TIL">github</Link>
-          블로그에 기록하였습니다. 주말과 공휴일에도 빠짐없이 개인 공부를 한
-          덕분에 총 642commits, 45개의 포스팅 을 하였습니다.
+          <Link
+            href="https://github.com/tada-js/codelion-TIL"
+            className={LINK_CLASS}
+          >
+            GitHub
+          </Link>
+          , 블로그에 기록하였습니다. 주말과 공휴일에도 빠짐없이 개인 공부를 한
+          덕분에 총 642commits, 45개의 포스팅을 하였습니다.
           <br />
-          <h3>ㅡ 배우고 경험한 것을 나눌 수 있도록 노력하고 있습니다.</h3>
+          <h3 className={SUB_TITLE_CLASS}>
+            ㅡ 배우고 경험한 것을 나눌 수 있도록 노력하고 있습니다.
+          </h3>
           타입스크립트를 학습하고 저와 같은 입문자들을 위해 무료 책을 출간
           하였습니다. 또한 책을 집필하면서 알게 된 내용을 바탕으로 제주 웹
           컨퍼런스에서 연사하였습니다.
-          <h3>
+          <h3 className={SUB_TITLE_CLASS}>
             ㅡ 궁극적인 목표는 “배운 것을 나눌 줄 아는 긍정적인 영향력을 가진
             개발자”입니다.
           </h3>
