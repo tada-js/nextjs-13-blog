@@ -26,7 +26,9 @@ export default function RootLayout({
       <body className="mx-auto flex w-full max-w-screen-2xl flex-col">
         <Header />
         <main className="grow">{children}</main>
-        <Footer />
+        <div className="-bg--sub-color">
+          <Footer />
+        </div>
       </body>
     </html>
   );
