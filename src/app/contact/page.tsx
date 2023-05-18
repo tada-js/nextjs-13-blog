@@ -13,9 +13,10 @@ const ContactPage = () => {
   return (
     <>
       <section className="m-8 flex flex-col items-center -bg--sub-color shadow-lg">
-        <h2 className="my-4 text-2xl font-semibold -text--text-brand-3">
+        <h2 className="mb-2 mt-4 text-2xl font-semibold -text--text-brand-3">
           연락 정보
         </h2>
+        <div className="mx-auto mb-2 w-24 border-b-4"></div>
         <article className="flex w-60 items-center justify-between">
           {LINKS.map((link, index) => (
             <a
@@ -30,9 +31,10 @@ const ContactPage = () => {
           ))}
           <p className="text-gray-500">justfix010@gmail.com</p>
         </article>
-        <h2 className="my-8 text-2xl font-semibold -text--text-brand-3">
+        <h2 className="mb-2 mt-8 text-2xl font-semibold -text--text-brand-3">
           이메일 보내기
         </h2>
+        <div className="mx-auto mb-2 w-24 border-b-4"></div>
         <ContactForm />
       </section>
     </>
