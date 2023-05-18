@@ -1,22 +1,22 @@
 'use client';
 
+interface Form {
+  from: string;
+  subject: string;
+  message: string;
+}
+
+const DEFAULT_FORM = {
+  from: '',
+  subject: '',
+  message: '',
+};
+
+const LABEL_CLASS =
+  "after:content-['*'] after:ml-0.5 after:text-red-400 font-semibold";
+const INPUT_CLASS = 'pl-1 text-black';
+
 const ContactForm = () => {
-  interface Form {
-    from: string;
-    subject: string;
-    message: string;
-  }
-
-  const DEFAULT_FORM = {
-    from: '',
-    subject: '',
-    message: '',
-  };
-
-  const LABEL_CLASS =
-    "after:content-['*'] after:ml-0.5 after:text-red-400 font-semibold";
-  const INPUT_CLASS = 'pl-1 text-black';
-
   return (
     <section className="my-2 w-full max-w-lg text-gray-600">
       <form className="flex w-full flex-col gap-2 rounded-xl bg-[#C4DFDF] p-4 shadow-md">
