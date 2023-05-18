@@ -16,7 +16,7 @@ const AboutPage = () => {
   return (
     <>
       <Profile />
-      <section className="m-8 grid grid-cols-2 -bg--sub-color text-center shadow-lg">
+      <section className="m-8 mx-auto grid max-w-screen-xl grid-cols-2 -bg--sub-color text-center shadow-lg">
         <article className="my-4 ">
           <h2 className={TITLE_CLASS}>프로필</h2>
           <div className="mx-auto w-24 border-b-4"></div>

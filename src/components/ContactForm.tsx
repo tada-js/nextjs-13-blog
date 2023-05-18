@@ -80,7 +80,7 @@ const ContactForm = () => {
           onChange={onChange}
           required
         />
-        <button className="mx-auto my-2 w-28 rounded-lg -bg--bg-brand-3 p-2 font-semibold text-slate-100 hover:-bg--bg-brand-1">
+        <button className="mx-auto my-2 w-28 rounded-lg -bg--bg-brand-3 p-2 font-semibold text-slate-100 duration-75 hover:-bg--bg-brand-1 hover:transition">
           제출
         </button>
       </form>

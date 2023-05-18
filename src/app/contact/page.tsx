@@ -12,7 +12,7 @@ const LINKS = [{ icon: <AiFillGithub />, url: 'https://github.com/tada-js' }];
 const ContactPage = () => {
   return (
     <>
-      <section className="m-8 flex flex-col items-center -bg--sub-color shadow-lg">
+      <section className="m-8 mx-auto flex max-w-screen-xl flex-col items-center -bg--sub-color py-4 shadow-lg">
         <h2 className="mb-2 mt-4 text-2xl font-semibold -text--text-brand-3">
           연락 정보
         </h2>
