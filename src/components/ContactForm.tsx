@@ -1,6 +1,7 @@
 'use client';
 
 import { ChangeEvent, FormEvent, useState } from 'react';
+import FormBanner, { FormBannerData } from './FormBanner';
 
 interface Form {
   from: string;
@@ -20,6 +21,7 @@ const INPUT_CLASS = 'pl-1 text-black';
 
 const ContactForm = () => {
   const [form, setForm] = useState<Form>(DEFAULT_FORM);
+  const [banner, setBanner] = useState<FormBannerData | null>(null);
 
   const onChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -28,10 +30,15 @@ const ContactForm = () => {
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setBanner({ message: '메일 전송 완료!', state: 'success' });
+    setTimeout(() => {
+      setBanner(null);
+    }, 3000);
   };
 
   return (
     <section className="my-2 w-full max-w-lg text-gray-600">
+      {banner && <FormBanner banner={banner} />}
       <form
         className="flex w-full flex-col gap-2 rounded-xl bg-[#C4DFDF] p-4 shadow-md"
         onSubmit={onSubmit}
