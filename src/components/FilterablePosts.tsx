@@ -3,6 +3,7 @@
 import { Post } from '@/service/posts';
 import PostsGrid from './PostsGrid';
 import { useState } from 'react';
+import Categories from './Categories';
 
 interface Props {
   posts: Post[];
@@ -21,6 +22,11 @@ const FilterablePosts = ({ posts, categories }: Props) => {
   return (
     <section className="m-4 flex">
       <PostsGrid posts={filtered} />
+      <Categories
+        categories={categories}
+        selected={selected}
+        onClick={setSelected}
+      />
     </section>
   );
 };
