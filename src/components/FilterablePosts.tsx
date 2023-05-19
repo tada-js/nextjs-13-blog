@@ -23,7 +23,7 @@ const FilterablePosts = ({ posts, categories }: Props) => {
     <section className="m-4 flex">
       <PostsGrid posts={filtered} />
       <Categories
-        categories={categories}
+        categories={[ALL_POSTS, ...categories]}
         selected={selected}
         onClick={setSelected}
       />
