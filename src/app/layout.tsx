@@ -23,12 +23,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={openSans.className}>
-      <body className="mx-auto flex w-full flex-col">
-        <div className="mx-auto w-full max-w-screen-2xl">
+      <body className="flex flex-col">
+        <div className="mx-auto h-full w-full max-w-screen-2xl">
           <Header />
+          <main className="grow">{children}</main>
         </div>
-        <main className="grow">{children}</main>
-        <div className="w-full -bg--sub-color">
+
+        <div className="-bg--sub-color">
           <Footer />
         </div>
       </body>

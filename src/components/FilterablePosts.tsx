@@ -19,7 +19,7 @@ const FilterablePosts = ({ posts, categories }: Props) => {
       : posts.filter((post) => post.category === selected);
 
   return (
-    <section>
+    <section className="m-4 flex">
       <PostsGrid posts={filtered} />
     </section>
   );
