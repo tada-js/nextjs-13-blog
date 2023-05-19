@@ -11,13 +11,15 @@ const PostCard = ({
 }: Props) => {
   return (
     <Link href={`/posts/${path}`}>
-      <article className="overflow-hidden rounded-md shadow-md hover:shadow-xl">
-        <Image
-          src={`/images/posts/${path}.png`}
-          alt={title}
-          width={300}
-          height={200}
-        />
+      <article className="overflow-hidden rounded-md shadow-md">
+        <div className="relative h-[200px] w-full">
+          <Image
+            className="max-h-64 w-full max-w-sm object-cover"
+            src={`/images/posts/${path}.png`}
+            alt={title}
+            fill
+          />
+        </div>
         <div className="flex flex-col items-center p-4">
           <time className="self-end text-gray-400">{date.toString()}</time>
           <h3 className="text-lg font-semibold">{title}</h3>
