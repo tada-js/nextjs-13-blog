@@ -1,7 +1,7 @@
 [
   {
     "title": "증가/감소 연산자의 부수 효과 (Feat. Redux)",
-    "description": "counter 예제에서 그동안 잊고 있었던 전위, 후위 증가/감소 연산자의 특징을 만날 수 있어서 기록합니다.",
+    "description": "counter 예제에서 그동안 잊고 있었던 전위, 후위 증가/감소 연산자의 특징을 만날 수 있어서 기록",
     "date": "2023-02-27",
     "category": "Redux",
     "path": "redux-side-effects-operators",
@@ -9,7 +9,7 @@
   },
   {
     "title": "CORS 정책에 막혔나요? 허용해 줍시다.",
-    "description": "서버에 요청하려면 만나게 되어 있는 CORS(Cross-Origin Resource Sharing) 정책. 정책에 막혔을 때의 상황과 어떻게 허용해 주는지까지 쉽고 간단하게 알아봅시다.",
+    "description": "서버에 요청하려면 만나게 되어 있는 CORS(Cross-Origin Resource Sharing) 정책. 정책에 막혔을 때의 상황과 어떻게 허용해 주는지까지 쉽고 간단하게 알아보기",
     "date": "2022-07-21",
     "category": "TIL",
     "path": "til-cors",
@@ -17,7 +17,7 @@
   },
   {
     "title": "구글 세이프 브라우징 - 사기성 사이트",
-    "description": "배포한 사이트가 구글 크롬 브라우저 기준으로 사기성 사이트로 식별되었는데요 사기성 사이트로 식별되면 어떻게 되는지, 그리고 어떻게 해결했는지를 기록합니다.",
+    "description": "배포한 사이트가 구글 크롬 브라우저 기준으로 사기성 사이트로 식별되었는데요 사기성 사이트로 식별되면 어떻게 되는지, 그리고 어떻게 해결했는지를 기록",
     "date": "2022-04-23",
     "category": "TIL",
     "path": "til-google-safe-browsing",
@@ -38,5 +38,37 @@
     "category": "Code Lion",
     "path": "codelion-week-2-recap",
     "featured": true
+  },
+  {
+    "title": "git 파일명 대소문자 구분하기",
+    "description": "대소문자 구분이 안 돼서 에러가 발생하는 문제가 생겼고 이를 해결하는 방법을 기록",
+    "date": "2022-11-15",
+    "category": "Git",
+    "path": "git-file-name",
+    "featured": false
+  },
+  {
+    "title": "Git PUSH 할 때 403 에러 발생(The requested URL returned error: 403)",
+    "description": "push 대상 저장소에 권한을 부여해서 해결하는 방법",
+    "date": "2022-06-21",
+    "category": "Git",
+    "path": "git-push-403-error",
+    "featured": false
+  },
+  {
+    "title": "Position, fixed와 sticy의 차이점은?",
+    "description": "CSS Position, fixed, sticy 속성 차이점",
+    "date": "2022-04-11",
+    "category": "CSS",
+    "path": "css-position-fixed-sticy",
+    "featured": false
+  },
+  {
+    "title": "HTML Living Standard, URL, IP, PORT, Grouping Content",
+    "description": "HTML Living Standard, URL, IP, PORT, Grouping Content 개념",
+    "date": "2022-03-29",
+    "category": "HTML",
+    "path": "html-living-url-ip-port-group",
+    "featured": false
   }
 ]
