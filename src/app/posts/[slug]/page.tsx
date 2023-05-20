@@ -1,3 +1,4 @@
+import AdjacentPostCard from '@/components/AdjacentPostCard';
 import PostContent from '@/components/PostContent';
 import { getPostData } from '@/service/posts';
 import Image from 'next/image';
@@ -22,7 +23,10 @@ const PostPage = async ({ params }: Props) => {
         height={420}
       />
       <PostContent post={post} />
-      <section></section>
+      <section>
+        {prev && <AdjacentPostCard post={prev} type="prev" />}
+        {next && <AdjacentPostCard post={next} type="next" />}
+      </section>
     </article>
   );
 };
