@@ -1,4 +1,6 @@
 import { PostData } from '@/service/posts';
+import { AiTwotoneCalendar } from 'react-icons/ai';
+import MarkdownViewer from './MarkdownViewer';
 
 interface Props {
   post: PostData;
@@ -8,12 +10,12 @@ const PostContent = ({ post }: Props) => {
   const { title, description, date, content } = post;
 
   return (
-    <section>
-      <div>
-        <p>{date.toString()}</p>
+    <section className="flex flex-col p-4">
+      <div className="flex items-center self-end text-gray-500">
+        <AiTwotoneCalendar />
+        <p className="ml-1 font-semibold">{date.toString()}</p>
       </div>
-      <h1>{title}</h1>
-      <p>{description}</p>
+      <MarkdownViewer content={content} />
     </section>
   );
 };

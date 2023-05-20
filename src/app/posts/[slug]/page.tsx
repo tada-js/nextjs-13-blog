@@ -13,8 +13,9 @@ const PostPage = async ({ params }: Props) => {
   const { title, path, next, prev } = post;
 
   return (
-    <article>
+    <article className="m-12 mx-auto max-w-screen-xl overflow-hidden rounded-2xl -bg--sub-color p-24 shadow-lg">
       <Image
+        className="h-1/5 max-h-[500px] w-full"
         src={`/images/posts/${path}.png`}
         alt={title}
         width={760}

@@ -25,7 +25,7 @@ const AboutPage = () => {
             <Link href="https://velog.io/@nu11" className={LINK_CLASS}>
               https://velog.io/@nu11
             </Link>
-            <br />
+
             <strong className={STRONG_CLASS}>GitHub: </strong>
             <Link href="https://github.com/tada-js" className={LINK_CLASS}>
               https://github.com/tada-js
@@ -48,7 +48,6 @@ const AboutPage = () => {
           </Link>
           , 블로그에 기록하였습니다. 주말과 공휴일에도 빠짐없이 개인 공부를 한
           덕분에 총 642commits, 45개의 포스팅을 하였습니다.
-          <br />
           <h3 className={SUB_TITLE_CLASS}>
             배우고 경험한 것을 나눌 수 있도록 노력하고 있습니다.
           </h3>
