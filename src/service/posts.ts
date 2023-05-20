@@ -24,6 +24,10 @@ export const getAllPosts = cache(async (): Promise<Post[]> => {
     .then((posts) => posts.sort((a, b) => (a.date > b.date ? -1 : 1)));
 });
 
+export const getFeaturedPosts = async (): Promise<Post[]> => {
+  return getAllPosts().then((posts) => posts.filter((post) => post.featured));
+};
+
 export const getPostData = async (fileName: string): Promise<PostData> => {
   const filePath = path.join(process.cwd(), 'data', 'posts', `${fileName}.md`);
   const posts = await getAllPosts();
