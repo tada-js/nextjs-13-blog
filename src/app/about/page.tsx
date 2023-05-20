@@ -16,16 +16,16 @@ const AboutPage = () => {
   return (
     <>
       <Profile />
-      <section className="m-8 mx-auto grid max-w-screen-xl grid-cols-2 -bg--sub-color text-center shadow-lg">
-        <article className="my-4 ">
+      <section className="grid max-w-screen-xl grid-cols-2 m-8 mx-auto text-center shadow-lg -bg--sub-color">
+        <article className="my-4">
           <h2 className={TITLE_CLASS}>프로필</h2>
-          <div className="mx-auto w-24 border-b-4"></div>
+          <div className="w-24 mx-auto border-b-4"></div>
           <p className="my-4">
             <strong className={STRONG_CLASS}>Blog: </strong>
             <Link href="https://velog.io/@nu11" className={LINK_CLASS}>
               https://velog.io/@nu11
             </Link>
-
+            <br />
             <strong className={STRONG_CLASS}>GitHub: </strong>
             <Link href="https://github.com/tada-js" className={LINK_CLASS}>
               https://github.com/tada-js
@@ -35,7 +35,7 @@ const AboutPage = () => {
 
         <article className="my-4 mr-10">
           <h2 className={TITLE_CLASS}>소개</h2>
-          <div className="mx-auto w-24 border-b-4"></div>
+          <div className="w-24 mx-auto border-b-4"></div>
           <h3 className={SUB_TITLE_CLASS}>
             새로운 걸 배우고 기록하고 경험하는 것을 좋아합니다.
           </h3>
