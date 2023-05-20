@@ -28,6 +28,10 @@ export const getFeaturedPosts = async (): Promise<Post[]> => {
   return getAllPosts().then((posts) => posts.filter((post) => post.featured));
 };
 
+export const getNonuredePosts = async () => {
+  return getAllPosts().then((posts) => posts.filter((post) => !post.featured));
+};
+
 export const getPostData = async (fileName: string): Promise<PostData> => {
   const filePath = path.join(process.cwd(), 'data', 'posts', `${fileName}.md`);
   const posts = await getAllPosts();
