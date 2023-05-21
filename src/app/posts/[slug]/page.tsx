@@ -25,7 +25,7 @@ const PostPage = async ({ params }: Props) => {
   const { title, path, next, prev } = post;
 
   return (
-    <article className="m-12 mx-auto max-w-screen-xl overflow-hidden rounded-2xl -bg--sub-color p-24 shadow-lg">
+    <article className="m-12 mx-auto max-w-screen-xl overflow-hidden rounded-2xl -bg--sub-color shadow-lg lg:p-24">
       <Image
         className="h-1/5 max-h-[500px] w-full"
         src={`/images/posts/${path}.png`}
