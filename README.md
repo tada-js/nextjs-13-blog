@@ -1,8 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 개인 블로그✏️
 
-## Getting Started
-
-First, run the development server:
+## 프로젝트 실행
 
 ```bash
 npm run dev
@@ -12,23 +10,46 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br><br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 배포
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Vercel: <a href="https://nextjs-13-blog-tada-js.vercel.app/" target="_blank">https://nextjs-13-blog-tada-js.vercel.app/</a>
 
-## Learn More
+<br><br>
 
-To learn more about Next.js, take a look at the following resources:
+## 개발 환경
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 개발 환경
+  <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" /> <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/react.js-61DAFB?style=for-the-badge&logo=react&logoColor=white" /> <img src="https://img.shields.io/badge/Tailwind CSS-41A2AD?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+- 세부 개발 환경
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  ```json
+  "@types/node": "20.1.5",
+  "@types/react": "18.2.1",
+  "@types/react-dom": "18.2.4",
+  "autoprefixer": "10.4.14",
+  "eslint": "8.40.0",
+  "eslint-config-next": "13.4.2",
+  "next": "13.4.2",
+  "nodemailer": "^6.9.2",
+  "postcss": "8.4.23",
+  "react": "18.2.0",
+  "react-dom": "18.2.0",
+  "react-icons": "^4.8.0",
+  "react-markdown": "^8.0.7",
+  "react-multi-carousel": "^2.8.3",
+  "react-syntax-highlighter": "^15.5.0",
+  "remark-gfm": "^3.0.1",
+  "tailwindcss": "3.3.2",
+  "typescript": "5.0.4",
+  "yup": "^1.1.1",
 
-## Deploy on Vercel
+  "@tailwindcss/typography": "^0.5.9",
+  "@types/nodemailer": "^6.4.7",
+  "@types/react-syntax-highlighter": "^15.5.6",
+  "prettier": "^2.8.8",
+  "prettier-plugin-tailwindcss": "^0.2.7"
+  ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  <br><br>
