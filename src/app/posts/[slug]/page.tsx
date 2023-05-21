@@ -34,7 +34,7 @@ const PostPage = async ({ params }: Props) => {
         height={420}
       />
       <PostContent post={post} />
-      <section className="flex shadow-md">
+      <section className="shadow-md sm:flex lg:flex">
         {prev && <AdjacentPostCard post={prev} type="prev" />}
         {next && <AdjacentPostCard post={next} type="next" />}
       </section>
