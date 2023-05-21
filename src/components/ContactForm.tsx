@@ -2,6 +2,7 @@
 
 import { ChangeEvent, FormEvent, useState } from 'react';
 import FormBanner, { FormBannerData } from './FormBanner';
+import { sendContactEmail } from '@/service/contact';
 
 interface Form {
   from: string;
@@ -30,10 +31,21 @@ const ContactForm = () => {
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setBanner({ message: '메일 전송 완료!', state: 'success' });
-    setTimeout(() => {
-      setBanner(null);
-    }, 3000);
+    sendContactEmail(form)
+      .then(() => {
+        setBanner({ message: '메일 전송 완료!', state: 'success' });
+        setForm(DEFAULT_FORM);
+      })
+      .catch(() => {
+        setBanner({ message: '메일 전송 실패', state: 'error' });
+      })
+      .finally(() => {
+        setTimeout(() => {
+          setTimeout(() => {
+            setBanner(null);
+          }, 3000);
+        });
+      });
   };
 
   return (
