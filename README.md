@@ -53,3 +53,32 @@ pnpm dev
   ```
 
   <br><br>
+
+## 주요 기능
+
+- <a href="https://nodemailer.com/about/" target="_blank">nodemailer</a> 모듈을 통해 사용자가 작성한 메일을 전송하고, 보낸 메일을 개인 계정 이메일로 확인할 수 있도록 구현
+  ![](https://velog.velcdn.com/images/nu11/post/42b2f984-f87a-4989-9fb0-575d838af6f3/image.png)
+- `metadata` 사용으로 페이지별 SEO 최적화
+- `react-markdown` 라이브러리를 통해 마크다운뷰어 컴포넌트를 사용해 `.md` 파일을 화면에 렌더링 할 수 있도록 구현
+- mail POST API 라우트
+
+  ```ts
+  export const POST = async (req: Request) => {
+    ...
+    return sendEmail(body)
+      .then(() => {
+        return new Response(JSON.stringify({ message: '메일 전송 성공' }), {
+          status: 200,
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+        return new Response(JSON.stringify({ message: '메일 전송 실패' }), {
+          status: 500,
+        });
+      });
+  };
+  ```
+
+- 캐러셀을 통해 게시물들을 출력
+- 클라이언트와 서버 컴포넌트의 분리
